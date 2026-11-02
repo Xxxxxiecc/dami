@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620" role="img" aria-labelledby="title desc">
+  <title id="title">明鼎稻花香二号原粮高端礼盒背面</title>
+  <desc id="desc">高端礼盒背面，米白底色展示产品信息与产地承诺。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fcf9f0"/>
+      <stop offset=".65" stop-color="#f1e8d6"/>
+      <stop offset="1" stop-color="#dfd0b5"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163d32"/>
+      <stop offset="1" stop-color="#08251e"/>
+    </linearGradient>
+    <pattern id="paperGrain" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r=".5" fill="#6c6b56" fill-opacity=".1"/>
+      <circle cx="15" cy="16" r=".45" fill="#6c6b56" fill-opacity=".08"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#00130e" flood-opacity=".26"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="39" y="42" width="642" height="526" rx="5" fill="url(#paper)"/>
+    <rect x="39" y="42" width="642" height="526" rx="5" fill="url(#paperGrain)"/>
+    <rect x="55" y="58" width="610" height="494" rx="2" fill="none" stroke="#9e7b44" stroke-width="1"/>
+    <rect x="39" y="42" width="642" height="46" fill="url(#green)"/>
+    <rect x="39" y="520" width="642" height="48" fill="url(#green)"/>
+    <path d="M681 486V568H602L681 486Z" fill="#c9b99d" fill-opacity=".54"/>
+
+    <g transform="translate(93 119)">
+      <circle r="27" fill="#143a30"/>
+      <circle r="21" fill="none" stroke="#c5a263"/>
+      <text y="-1" text-anchor="middle" fill="#f2e3c0" font-family="KaiTi, STKaiti, serif" font-size="10" letter-spacing="1">五常</text>
+      <text y="13" text-anchor="middle" fill="#c6ab76" font-family="KaiTi, STKaiti, serif" font-size="7">乾丰</text>
+    </g>
+    <text x="135" y="111" fill="#1a3c32" font-family="Songti SC, SimSun, serif" font-size="19" letter-spacing="6">五常乾丰农业</text>
+    <text x="137" y="133" fill="#9a7945" font-family="Georgia, serif" font-size="7" letter-spacing="2">WUCHANG QIANFENG AGRICULTURE</text>
+
+    <text x="82" y="208" fill="#15392f" font-family="STKaiti, KaiTi, serif" font-size="42" letter-spacing="7">明鼎稻花香二号</text>
+    <text x="84" y="238" fill="#86693c" font-family="Songti SC, SimSun, serif" font-size="12" letter-spacing="7">原 粮 大 米 · 高 端 礼 盒</text>
+    <line x1="82" y1="260" x2="638" y2="260" stroke="#9e7b44" stroke-opacity=".38"/>
+
+    <g fill="#263e35" font-family="Songti SC, SimSun, serif" font-size="11">
+      <text x="84" y="294">品名</text><text x="636" y="294" text-anchor="end">明鼎稻花香二号原粮</text>
+      <line x1="84" y1="306" x2="636" y2="306" stroke="#9c8c73" stroke-opacity=".33"/>
+      <text x="84" y="330">配料</text><text x="636" y="330" text-anchor="end">粳稻（稻花香二号）</text>
+      <line x1="84" y1="342" x2="636" y2="342" stroke="#9c8c73" stroke-opacity=".33"/>
+      <text x="84" y="366">净含量</text><text x="636" y="366" text-anchor="end">5 kg（500g × 10）</text>
+      <line x1="84" y1="378" x2="636" y2="378" stroke="#9c8c73" stroke-opacity=".33"/>
+      <text x="84" y="402">质量等级</text><text x="636" y="402" text-anchor="end">优质一等</text>
+      <line x1="84" y1="414" x2="636" y2="414" stroke="#9c8c73" stroke-opacity=".33"/>
+      <text x="84" y="438">产地</text><text x="636" y="438" text-anchor="end">中国 · 黑龙江 · 五常</text>
+      <line x1="84" y1="450" x2="636" y2="450" stroke="#9c8c73" stroke-opacity=".33"/>
+      <text x="84" y="474">储存方式</text><text x="636" y="474" text-anchor="end">阴凉干燥处密封保存</text>
+      <line x1="84" y1="486" x2="636" y2="486" stroke="#9c8c73" stroke-opacity=".33"/>
+    </g>
+
+    <g transform="translate(360 494)">
+      <rect x="-228" y="0" width="456" height="36" fill="#13392f"/>
+      <text x="0" y="15" text-anchor="middle" fill="#e4d2ad" font-family="Songti SC, SimSun, serif" font-size="8" letter-spacing="4">一 季 一 作 · 五 常 稻 香</text>
+      <text x="0" y="28" text-anchor="middle" fill="#9e8a62" font-family="Georgia, serif" font-size="5" letter-spacing="1.7">GROWN IN WUCHANG · HARVESTED ONCE A YEAR</text>
+    </g>
+    <text x="360" y="546" text-anchor="middle" fill="#c8b58e" font-family="Georgia, serif" font-size="6" letter-spacing="2.2">ORIGINAL RICE · PREMIUM GIFT COLLECTION</text>
+  </g>
+</svg>

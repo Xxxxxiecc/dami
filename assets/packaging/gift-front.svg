@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620" role="img" aria-labelledby="title desc">
+  <title id="title">明鼎稻花香二号原粮高端礼盒正面</title>
+  <desc id="desc">深墨绿高端粮食礼盒正面，金色浮雕稻穗与品牌文字。</desc>
+  <defs>
+    <linearGradient id="giftGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#164439"/>
+      <stop offset=".5" stop-color="#0b2b24"/>
+      <stop offset="1" stop-color="#051d18"/>
+    </linearGradient>
+    <linearGradient id="giftGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0dba9"/>
+      <stop offset=".36" stop-color="#b88b46"/>
+      <stop offset=".62" stop-color="#e7cc90"/>
+      <stop offset="1" stop-color="#8b662f"/>
+    </linearGradient>
+    <linearGradient id="giftPaper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf5e9"/>
+      <stop offset="1" stop-color="#e7dbc1"/>
+    </linearGradient>
+    <pattern id="giftLines" width="72" height="72" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+      <path d="M12 66C35 43 44 23 42 1M42 14c-13-1-21-6-27-13M43 24c13-2 21-8 26-15" fill="none" stroke="#e6cc94" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+    <filter id="giftShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#00130e" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <g filter="url(#giftShadow)">
+    <rect x="39" y="42" width="642" height="526" rx="5" fill="url(#giftGreen)"/>
+    <rect x="39" y="42" width="642" height="526" rx="5" fill="url(#giftLines)"/>
+    <rect x="55" y="58" width="610" height="494" rx="2" fill="none" stroke="url(#giftGold)" stroke-width="1.1"/>
+    <rect x="64" y="67" width="592" height="476" rx="1" fill="none" stroke="#cdb476" stroke-opacity=".3"/>
+    <path d="M39 42H681V88H39Z" fill="#07221c" fill-opacity=".28"/>
+    <path d="M39 520H681V568H39Z" fill="#041814" fill-opacity=".34"/>
+    <path d="M681 486V568H602L681 486Z" fill="#00120f" fill-opacity=".19"/>
+
+    <g transform="translate(116 111)">
+      <path d="M0 -31 30 -8 22 29 0 42 -22 29 -30 -8Z" fill="none" stroke="#c7a562" stroke-width="1"/>
+      <text x="0" y="-2" text-anchor="middle" fill="#e6d4ae" font-family="KaiTi, STKaiti, serif" font-size="11" letter-spacing="1">五常</text>
+      <text x="0" y="14" text-anchor="middle" fill="#b99c63" font-family="KaiTi, STKaiti, serif" font-size="8">乾丰</text>
+    </g>
+    <text x="201" y="101" fill="#e9dcc1" font-family="Songti SC, SimSun, serif" font-size="20" letter-spacing="7">五常乾丰农业</text>
+    <text x="203" y="124" fill="#a99164" font-family="Georgia, serif" font-size="7" letter-spacing="2.6">WUCHANG QIANFENG AGRICULTURE</text>
+    <text x="636" y="111" text-anchor="end" fill="#cdb475" font-family="Georgia, serif" font-size="8" letter-spacing="2">SINGLE ORIGIN · 2026</text>
+
+    <!-- embossed rice field horizon -->
+    <g opacity=".36" fill="none" stroke="url(#giftGold)" stroke-width=".8">
+      <path d="M91 422C185 365 241 377 326 408C416 440 495 433 629 370"/>
+      <path d="M90 438C190 387 260 392 334 419C427 453 522 442 631 387"/>
+      <path d="M94 450C190 410 262 413 338 433C438 459 530 451 629 405"/>
+    </g>
+
+    <text x="360" y="229" text-anchor="middle" fill="#f7efdc" font-family="STKaiti, KaiTi, serif" font-size="94" font-weight="600" letter-spacing="13">明鼎</text>
+    <line x1="207" y1="258" x2="302" y2="258" stroke="url(#giftGold)" stroke-width=".9"/>
+    <circle cx="360" cy="258" r="3" fill="#d4b473"/>
+    <line x1="418" y1="258" x2="513" y2="258" stroke="url(#giftGold)" stroke-width=".9"/>
+    <text x="360" y="303" text-anchor="middle" fill="#ead9b7" font-family="Songti SC, SimSun, serif" font-size="25" letter-spacing="9">稻花香二号</text>
+    <text x="360" y="334" text-anchor="middle" fill="#c4a86f" font-family="Songti SC, SimSun, serif" font-size="13" letter-spacing="10">原 粮 大 米</text>
+
+    <g transform="translate(360 423)">
+      <path d="M-70 0H70" stroke="#b59558" stroke-opacity=".55"/>
+      <rect x="-88" y="19" width="176" height="42" rx="1" fill="#0a2922" stroke="#a98548" stroke-width=".8"/>
+      <text x="0" y="36" text-anchor="middle" fill="#dfcca3" font-family="Songti SC, SimSun, serif" font-size="9" letter-spacing="4">黑 龙 江 · 五 常</text>
+      <text x="0" y="51" text-anchor="middle" fill="#9f895f" font-family="Georgia, serif" font-size="6" letter-spacing="2">ORIGIN PROTECTED</text>
+    </g>
+
+    <text x="360" y="519" text-anchor="middle" fill="#dbcba9" font-family="Songti SC, SimSun, serif" font-size="10" letter-spacing="4">稻花香里的中国礼</text>
+    <text x="360" y="548" text-anchor="middle" fill="#96825c" font-family="Georgia, serif" font-size="7" letter-spacing="2.6">PREMIUM ORIGINAL RICE · 5 KG</text>
+  </g>
+</svg>

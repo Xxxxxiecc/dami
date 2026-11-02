@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="760" viewBox="0 0 520 760" role="img" aria-labelledby="title desc">
+  <title id="title">明鼎稻花香二号原粮普通袋装背面</title>
+  <desc id="desc">米白色大米包装袋背面，展示产品说明、产地与规格。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset=".6" stop-color="#f2ead9"/>
+      <stop offset="1" stop-color="#e5d8bf"/>
+    </linearGradient>
+    <pattern id="grainPaper" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="6" r=".55" fill="#6a765a" fill-opacity=".11"/>
+      <circle cx="17" cy="15" r=".45" fill="#6a765a" fill-opacity=".08"/>
+    </pattern>
+    <filter id="bagShadow" x="-20%" y="-12%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#00120e" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <g filter="url(#bagShadow)">
+    <path d="M89 56 Q95 26 128 23 L392 23 Q425 26 431 56 L443 660 Q445 723 390 739 L130 739 Q75 723 77 660 Z" fill="url(#paper)"/>
+    <path d="M89 56 Q95 26 128 23 L392 23 Q425 26 431 56 L443 660 Q445 723 390 739 L130 739 Q75 723 77 660 Z" fill="url(#grainPaper)"/>
+    <path d="M91 72 Q113 45 144 40 L376 40 Q407 45 429 72" fill="none" stroke="#a37b3d" stroke-width="1.7"/>
+    <path d="M84 640 Q95 709 145 728 L375 728 Q425 709 436 640" fill="#ddcfb4" fill-opacity=".7"/>
+
+    <g transform="translate(260 101)">
+      <circle r="31" fill="#133c31"/>
+      <circle r="25" fill="none" stroke="#c19a58"/>
+      <text y="-2" text-anchor="middle" fill="#f0e3c6" font-family="KaiTi, STKaiti, serif" font-size="11" letter-spacing="2">五常</text>
+      <text y="13" text-anchor="middle" fill="#d2b879" font-family="KaiTi, STKaiti, serif" font-size="8">乾丰</text>
+    </g>
+    <text x="260" y="162" text-anchor="middle" fill="#183d32" font-family="Songti SC, SimSun, serif" font-size="17" letter-spacing="7">五常乾丰农业</text>
+    <text x="260" y="187" text-anchor="middle" fill="#94703a" font-family="Georgia, serif" font-size="8" letter-spacing="3">WUCHANG QIANFENG AGRICULTURE</text>
+
+    <line x1="116" y1="214" x2="404" y2="214" stroke="#94703a" stroke-opacity=".45"/>
+    <text x="260" y="245" text-anchor="middle" fill="#12372d" font-family="STKaiti, KaiTi, serif" font-size="35" letter-spacing="6">明鼎稻花香二号</text>
+    <text x="260" y="272" text-anchor="middle" fill="#7e653f" font-family="Songti SC, SimSun, serif" font-size="11" letter-spacing="7">原 粮 大 米</text>
+
+    <g transform="translate(260 292)">
+      <rect x="-134" y="0" width="268" height="76" fill="#12372d"/>
+      <text x="0" y="22" text-anchor="middle" fill="#eddfc2" font-family="Songti SC, SimSun, serif" font-size="10" letter-spacing="5">核心产区</text>
+      <text x="0" y="48" text-anchor="middle" fill="#d6b977" font-family="Songti SC, SimSun, serif" font-size="18" letter-spacing="5">黑龙江 · 五常</text>
+      <text x="0" y="65" text-anchor="middle" fill="#a9a183" font-family="Arial, sans-serif" font-size="6" letter-spacing="2">WUCHANG · HEILONGJIANG</text>
+    </g>
+
+    <g fill="#263f36" font-family="Songti SC, SimSun, serif" font-size="11">
+      <text x="116" y="415">品名</text><text x="404" y="415" text-anchor="end">明鼎稻花香二号原粮</text>
+      <line x1="116" y1="427" x2="404" y2="427" stroke="#a5967c" stroke-opacity=".38"/>
+      <text x="116" y="451">配料</text><text x="404" y="451" text-anchor="end">粳稻（稻花香二号）</text>
+      <line x1="116" y1="463" x2="404" y2="463" stroke="#a5967c" stroke-opacity=".38"/>
+      <text x="116" y="487">净含量</text><text x="404" y="487" text-anchor="end">5 kg</text>
+      <line x1="116" y1="499" x2="404" y2="499" stroke="#a5967c" stroke-opacity=".38"/>
+      <text x="116" y="523">质量等级</text><text x="404" y="523" text-anchor="end">优质一等</text>
+      <line x1="116" y1="535" x2="404" y2="535" stroke="#a5967c" stroke-opacity=".38"/>
+      <text x="116" y="559">保质期</text><text x="404" y="559" text-anchor="end">12个月</text>
+      <line x1="116" y1="571" x2="404" y2="571" stroke="#a5967c" stroke-opacity=".38"/>
+      <text x="116" y="595">储存方式</text><text x="404" y="595" text-anchor="end">阴凉干燥处密封保存</text>
+    </g>
+
+    <text x="260" y="632" text-anchor="middle" fill="#786845" font-family="Songti SC, SimSun, serif" font-size="9" letter-spacing="2">一季一作 · 静待米香</text>
+    <text x="260" y="655" text-anchor="middle" fill="#263f36" font-family="Arial, sans-serif" font-size="7" letter-spacing="1.2">产地：中国黑龙江省哈尔滨市五常市</text>
+    <text x="260" y="673" text-anchor="middle" fill="#263f36" font-family="Arial, sans-serif" font-size="7" letter-spacing="1.2">生产商：五常乾丰农业有限公司</text>
+    <rect x="118" y="695" width="284" height="1" fill="#977441" opacity=".35"/>
+    <text x="260" y="718" text-anchor="middle" fill="#977441" font-family="Arial, sans-serif" font-size="6" letter-spacing="1.5">ORIGIN · WUCHANG · SINGLE ORIGIN RICE</text>
+  </g>
+</svg>

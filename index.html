@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b2c24">
+  <meta name="description" content="五常乾丰农业 · 明鼎稻花香二号原粮。来自黑龙江五常的高端原粮大米，一季一作，当季新米。">
+  <title>明鼎稻花香二号原粮 | 五常乾丰农业</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2c24'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23c8a562'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-size='27' fill='%23f4ead5' font-family='serif'%3E乾%3C/text%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+      <button class="brand" type="button" data-route="home" aria-label="返回首页">
+        <span class="brand-seal" aria-hidden="true">乾</span>
+        <span class="brand-copy">
+          <strong data-i18n="brand">五常乾丰农业</strong>
+          <small>WUCHANG QIANFENG</small>
+        </span>
+      </button>
+
+      <nav class="desktop-nav" aria-label="主导航">
+        <button class="nav-link active" type="button" data-route="home" data-i18n="nav.home">首页</button>
+        <button class="nav-link" type="button" data-route="products" data-i18n="nav.products">甄选米礼</button>
+        <button class="nav-link" type="button" data-route="about" data-i18n="nav.about">五常溯源</button>
+        <button class="nav-link" type="button" data-route="account" data-i18n="nav.member">会员中心</button>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="language-wrap">
+          <button class="icon-text-btn" id="languageButton" type="button" aria-expanded="false" aria-controls="languageMenu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm6.7 8h-2.8a14 14 0 0 0-1.4-5 7.1 7.1 0 0 1 4.2 5ZM12 4.9c.8 1.1 1.6 3.2 1.8 6.1h-3.6c.2-2.9 1-5 1.8-6.1ZM8.5 6a14 14 0 0 0-1.4 5H4.3a7.1 7.1 0 0 1 4.2-5ZM4.3 13h2.8a14 14 0 0 0 1.4 5 7.1 7.1 0 0 1-4.2-5ZM12 19.1c-.8-1.1-1.6-3.2-1.8-6.1h3.6c-.2 2.9-1 5-1.8 6.1Zm3.5-1.1a14 14 0 0 0 1.4-5h2.8a7.1 7.1 0 0 1-4.2 5Z"/></svg>
+            <span id="currentLanguage">简</span>
+          </button>
+          <div class="language-menu" id="languageMenu" role="menu">
+            <button type="button" data-lang="zh" class="active" role="menuitem"><span>简</span><strong>简体中文</strong><small>Chinese</small></button>
+            <button type="button" data-lang="en" role="menuitem"><span>EN</span><strong>English</strong><small>英语</small></button>
+            <button type="button" data-lang="ja" role="menuitem"><span>日</span><strong>日本語</strong><small>Japanese</small></button>
+            <button type="button" data-lang="ko" role="menuitem"><span>한</span><strong>한국어</strong><small>Korean</small></button>
+          </div>
+        </div>
+        <button class="account-btn" id="accountButton" type="button" aria-label="会员中心">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8c.4-4 2.9-6 7-6s6.6 2 7 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span id="accountNavLabel" data-i18n="nav.login">登录</span>
+        </button>
+        <button class="cart-btn" id="cartButton" type="button" aria-label="购物车">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l-1.2 10H6.2L5 7Zm3-1a4 4 0 0 1 8 0M9 10v4m3-4v4m3-4v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuButton" type="button" aria-label="打开菜单" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <button class="active" type="button" data-route="home" data-i18n="nav.home">首页</button>
+      <button type="button" data-route="products" data-i18n="nav.products">甄选米礼</button>
+      <button type="button" data-route="about" data-i18n="nav.about">五常溯源</button>
+      <button type="button" data-route="account" data-i18n="nav.member">会员中心</button>
+      <button type="button" data-route="cart" data-i18n="nav.cart">购物车</button>
+    </div>
+  </header>
+
+  <main id="appMain">
+    <section class="site-page active" id="page-home" data-page="home">
+      <section class="hero" id="hero">
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline poster="assets/images/hero-poster.svg">
+          <source src="assets/media/rice-field.webm" type="video/webm">
+        </video>
+        <div class="hero-poster" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-paddy-lines" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-controls">
+          <button class="video-toggle" id="videoToggle" type="button" aria-label="暂停视频">
+            <svg class="pause-icon" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></svg>
+            <svg class="play-icon" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></svg>
+          </button>
+          <span data-i18n="hero.film">五常稻田 · 实景影像</span>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-eyebrow" data-reveal>
+            <span class="eyebrow-line"></span>
+            <span data-i18n="hero.eyebrow">北纬 45° · 中国五常</span>
+          </div>
+          <h1 data-reveal>
+            <span data-i18n="hero.title1">五常黑土</span>
+            <em data-i18n="hero.title2">一季稻香</em>
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle" data-reveal>从寒地稻田到一碗温润米饭。明鼎稻花香二号原粮，只取当季新米，守住土地本真的香气。</p>
+          <div class="hero-actions" data-reveal>
+            <button class="btn btn-gold" type="button" data-scroll-to="product-showcase">
+              <span data-i18n="hero.shop">甄选当季米礼</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+            </button>
+            <button class="btn btn-ghost-light" type="button" data-route="about">
+              <span data-i18n="hero.story">聆听五常故事</span>
+            </button>
+          </div>
+          <div class="hero-meta" data-reveal>
+            <div><strong>196°</strong><span data-i18n="hero.meta1">充足日照</span></div>
+            <i></i>
+            <div><strong>138</strong><span data-i18n="hero.meta2">天生积温</span></div>
+            <i></i>
+            <div><strong>1</strong><span data-i18n="hero.meta3">一年一季</span></div>
+          </div>
+        </div>
+
+        <div class="hero-side-note" aria-hidden="true">
+          <span>THE TASTE OF NORTH 45°</span>
+          <i></i>
+        </div>
+        <div class="hero-scroll">
+          <span data-i18n="hero.scroll">向下寻香</span>
+          <i></i>
+        </div>
+      </section>
+
+      <div class="promise-strip">
+        <div class="promise-track">
+          <span data-i18n="strip.1">五常核心产区</span><b>·</b>
+          <span data-i18n="strip.2">一季一作</span><b>·</b>
+          <span data-i18n="strip.3">当季新米</span><b>·</b>
+          <span data-i18n="strip.4">原产地直发</span><b>·</b>
+          <span data-i18n="strip.5">东方礼序</span><b>·</b>
+          <span data-i18n="strip.6">自然米香</span><b>·</b>
+        </div>
+      </div>
+
+      <section class="origin-section section-pad">
+        <div class="section-shell">
+          <div class="origin-grid">
+            <div class="origin-visual" data-reveal>
+              <div class="origin-frame">
+                <img src="assets/images/paddy-art.svg" alt="五常稻田远景插画" data-i18n-alt="alt.paddy">
+                <span class="origin-stamp" data-i18n="origin.stamp">五常<br>原产</span>
+                <div class="origin-coordinate">
+                  <span>N 44° 55′</span>
+                  <i></i>
+                  <span>E 127° 09′</span>
+                </div>
+              </div>
+              <div class="origin-vertical">
+                <span data-i18n="origin.vertical">天地有常 · 稻亦有道</span>
+              </div>
+            </div>
+
+            <div class="origin-copy" data-reveal>
+              <div class="section-kicker"><span>01</span><i></i><em data-i18n="origin.kicker">风土之礼</em></div>
+              <h2>
+                <span data-i18n="origin.title1">好米，从不辜负</span>
+                <em data-i18n="origin.title2">一方水土。</em>
+              </h2>
+              <p class="lead" data-i18n="origin.lead">五常乾丰农业扎根黑龙江五常核心稻区，以敬畏土地的方式，等待每一株稻穗自然成熟。</p>
+              <p data-i18n="origin.body">寒地黑土、昼夜温差与长白山余脉的清冽水系，共同塑造稻花香二号清甜、软糯、油润的米质。我们坚持一季一作、当季鲜碾，让每一碗米饭都保留黑土地最本真的香气。</p>
+              <div class="origin-features">
+                <article>
+                  <span class="feature-icon">
+                    <svg viewBox="0 0 36 36"><path d="M18 31c1-9 4-15 10-20M18 27c-6-1-10-5-12-10m13 17c6-2 10-6 12-11M20 18c-4 0-7-2-9-5m12 11c4-1 7-3 9-6M24 14c-3-1-5-3-6-6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                  </span>
+                  <strong data-i18n="origin.feature1">寒地黑土</strong>
+                  <small data-i18n="origin.feature1sub">自然孕育</small>
+                </article>
+                <article>
+                  <span class="feature-icon">
+                    <svg viewBox="0 0 36 36"><path d="M18 30V15m0 8c-5 0-9-3-10-8 5-1 9 2 10 8Zm0-7c5 0 9-3 10-8-5-1-9 2-10 8Zm0 0V5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                  </span>
+                  <strong data-i18n="origin.feature2">一季一作</strong>
+                  <small data-i18n="origin.feature2sub">顺时而收</small>
+                </article>
+                <article>
+                  <span class="feature-icon">
+                    <svg viewBox="0 0 36 36"><path d="M8 18h20M10 18c1 7 4 11 8 11s7-4 8-11M14 14c1-4 3-7 4-9 2 3 4 6 4 9" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                  </span>
+                  <strong data-i18n="origin.feature3">当季鲜碾</strong>
+                  <small data-i18n="origin.feature3sub">锁住米香</small>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-showcase section-pad" id="product-showcase">
+        <div class="section-shell">
+          <div class="section-heading center" data-reveal>
+            <div class="section-kicker center"><span>02</span><i></i><em data-i18n="product.kicker">当季甄选</em></div>
+            <h2 data-i18n="product.title">一袋稻花香，盛满五常的秋</h2>
+            <p data-i18n="product.subtitle">普通袋装，是日常的一碗好饭；高端礼盒，是郑重相赠的一份心意。</p>
+          </div>
+
+          <div class="showcase-grid">
+            <div class="showcase-visual" data-reveal>
+              <div class="showcase-halo"></div>
+              <div class="showcase-grid-lines"></div>
+              <span class="stage-number">N°. <strong id="stageNumber">01</strong></span>
+              <div class="drag-stage" id="dragStage" aria-label="可拖动旋转的产品展示">
+                <div class="showcase-object" id="showcaseObject">
+                  <img src="assets/packaging/bag-front.svg" alt="明鼎稻花香二号原粮袋装正面" id="showcaseFront">
+                  <img src="assets/packaging/bag-back.svg" alt="明鼎稻花香二号原粮袋装背面" id="showcaseBack">
+                </div>
+              </div>
+              <div class="drag-hint">
+                <span>
+                  <svg viewBox="0 0 24 24"><path d="M9 7 4 12l5 5M15 7l5 5-5 5M4 12h16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <em data-i18n="product.drag">按住拖动 · 360° 查看</em>
+              </div>
+              <div class="view-controls" aria-label="包装视图">
+                <button type="button" class="active" data-view="front" data-i18n="product.front">正面</button>
+                <button type="button" data-view="side" data-i18n="product.side">侧面</button>
+                <button type="button" data-view="back" data-i18n="product.back">背面</button>
+              </div>
+              <div class="stage-gold-circle"></div>
+            </div>
+
+            <div class="showcase-details" data-reveal>
+              <div class="product-tag" id="productTag" data-i18n="product.tagClassic">日常袋装 · 5KG</div>
+              <h3 id="showcaseName">明鼎 稻花香二号原粮</h3>
+              <p class="product-en">MINGDING · DAOHUAXIANG NO.2</p>
+              <div class="rating-line">
+                <span class="stars">★★★★★</span>
+                <span>4.9</span>
+                <i></i>
+                <span data-i18n="product.reviews">2,186 位会员珍藏</span>
+              </div>
+              <p class="product-description" id="showcaseDescription"></p>
+
+              <div class="spec-selector">
+                <div class="spec-label"><span data-i18n="product.spec">选择规格</span><small data-i18n="product.specHint">两种米礼，同一片稻田</small></div>
+                <div class="spec-grid">
+                  <button class="spec-card active" type="button" data-variant="classic">
+                    <span class="spec-radio"></span>
+                    <span class="spec-copy">
+                      <strong data-i18n="product.classic">普通袋装</strong>
+                      <small>5 kg · <span data-i18n="product.daily">日常之选</span></small>
+                    </span>
+                    <b>¥89</b>
+                  </button>
+                  <button class="spec-card" type="button" data-variant="gift">
+                    <span class="spec-radio"></span>
+                    <span class="spec-copy">
+                      <strong data-i18n="product.gift">高端礼盒</strong>
+                      <small>5 kg · <span data-i18n="product.giftFor">礼赠之选</span></small>
+                    </span>
+                    <b>¥299</b>
+                  </button>
+                </div>
+              </div>
+
+              <div class="price-row">
+                <div class="price-wrap">
+                  <small data-i18n="product.price">会员价</small>
+                  <strong><sup>¥</sup><span id="showcasePrice">89</span></strong>
+                  <del id="showcaseOldPrice">¥119</del>
+                </div>
+                <div class="points-return">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor"/><path d="M12 7v10m3-8c-1-2-5-2-5 1s5 1 5 3-4 2-5 0" fill="none" stroke="currentColor" stroke-linecap="round"/></svg>
+                  <span data-i18n="product.points">购买可得积分</span>
+                  <b id="showcasePoints">890</b>
+                </div>
+              </div>
+
+              <div class="buy-row">
+                <div class="qty-control">
+                  <button type="button" data-qty="-1" aria-label="减少数量">−</button>
+                  <span id="showcaseQty">1</span>
+                  <button type="button" data-qty="1" aria-label="增加数量">＋</button>
+                </div>
+                <button class="btn btn-outline-dark" id="addToCartBtn" type="button">
+                  <svg viewBox="0 0 24 24"><path d="M5 7h14l-1.2 10H6.2L5 7Zm3-1a4 4 0 0 1 8 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                  <span data-i18n="product.addCart">加入购物车</span>
+                </button>
+                <button class="btn btn-solid" id="buyNowBtn" type="button">
+                  <span data-i18n="product.buyNow">立即购买</span>
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+              <div class="buy-assurance">
+                <span><i></i><em data-i18n="product.assurance1">原产地直发</em></span>
+                <span><i></i><em data-i18n="product.assurance2">破损包赔</em></span>
+                <span><i></i><em data-i18n="product.assurance3">顺丰包邮</em></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="craft-section section-pad">
+        <div class="section-shell">
+          <div class="section-heading split" data-reveal>
+            <div>
+              <div class="section-kicker"><span>03</span><i></i><em data-i18n="craft.kicker">一季一作</em></div>
+              <h2 data-i18n="craft.title">让时间，成为米香的一部分</h2>
+            </div>
+            <p data-i18n="craft.subtitle">不追赶季节，只等待成熟。每一步都循着五常的节气，把自然的馈赠安静地留在一粒米里。</p>
+          </div>
+          <div class="craft-timeline">
+            <article data-reveal>
+              <span class="timeline-index">01</span>
+              <div class="timeline-line"></div>
+              <small data-i18n="craft.season1">立夏 · 播种</small>
+              <h3 data-i18n="craft.step1">寒地育秧</h3>
+              <p data-i18n="craft.step1desc">甄选稻花香二号原种，在昼夜温差中缓慢生长，积攒清甜。</p>
+            </article>
+            <article data-reveal>
+              <span class="timeline-index">02</span>
+              <div class="timeline-line"></div>
+              <small data-i18n="craft.season2">小满 · 生长</small>
+              <h3 data-i18n="craft.step2">活水润田</h3>
+              <p data-i18n="craft.step2desc">长白山余脉水系灌溉，黑土与清流共同孕育稻穗。</p>
+            </article>
+            <article data-reveal>
+              <span class="timeline-index">03</span>
+              <div class="timeline-line"></div>
+              <small data-i18n="craft.season3">秋分 · 成熟</small>
+              <h3 data-i18n="craft.step3">顺时收割</h3>
+              <p data-i18n="craft.step3desc">等待稻穗自然低头，不抢早，不催熟，守住本真风味。</p>
+            </article>
+            <article data-reveal>
+              <span class="timeline-index">04</span>
+              <div class="timeline-line"></div>
+              <small data-i18n="craft.season4">入冬 · 尝新</small>
+              <h3 data-i18n="craft.step4">当季鲜碾</h3>
+              <p data-i18n="craft.step4desc">低温慢碾、密封锁鲜，把五常秋天送到你的餐桌。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="packaging-section section-pad">
+        <div class="section-shell">
+          <div class="packaging-grid">
+            <div class="packaging-copy" data-reveal>
+              <div class="section-kicker light"><span>04</span><i></i><em data-i18n="design.kicker">东方米礼</em></div>
+              <h2><span data-i18n="design.title1">装得下心意，</span><em data-i18n="design.title2">也装得下风土。</em></h2>
+              <p data-i18n="design.body">从日常的一餐，到郑重相赠的一礼。明鼎以墨绿为底、米白为纸、哑金为引，将五常稻田的克制与丰盛，收进一方东方包装。</p>
+              <button class="text-link light" id="openPackagingModal" type="button">
+                <span data-i18n="design.view">查看包装三视图</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              </button>
+              <div class="packaging-swatches">
+                <span><i style="background:#f3ead8"></i><em data-i18n="design.color1">米白</em></span>
+                <span><i style="background:#b18b4b"></i><em data-i18n="design.color2">哑金</em></span>
+                <span><i style="background:#0d3329"></i><em data-i18n="design.color3">墨绿</em></span>
+              </div>
+            </div>
+            <div class="packaging-collage" data-reveal>
+              <figure class="pack-card pack-card-gift">
+                <img src="assets/packaging/gift-front.svg" alt="高端礼盒装大米包装正面" data-i18n-alt="alt.giftFront">
+                <figcaption><span>GIFT COLLECTION</span><strong data-i18n="product.gift">高端礼盒</strong></figcaption>
+              </figure>
+              <figure class="pack-card pack-card-bag">
+                <img src="assets/packaging/bag-front.svg" alt="普通袋装大米包装正面" data-i18n-alt="alt.bagFront">
+                <figcaption><span>DAILY SELECTION</span><strong data-i18n="product.classic">普通袋装</strong></figcaption>
+              </figure>
+              <span class="collage-seal" aria-hidden="true">五常<br>稻香</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="membership-cta section-pad">
+        <div class="section-shell">
+          <div class="membership-card" data-reveal>
+            <div class="membership-mark" aria-hidden="true">鼎</div>
+            <div class="membership-copy">
+              <small data-i18n="member.kicker">明鼎米友会</small>
+              <h2 data-i18n="member.title">每一碗好饭，都有回响</h2>
+              <p data-i18n="member.body">注册会员，消费 1 元即得 10 积分。积分与每一份订单一同沉淀，见证餐桌上的四季。</p>
+            </div>
+            <div class="membership-actions">
+              <button class="btn btn-gold" type="button" id="joinMemberBtn" data-i18n="member.join">成为米友</button>
+              <button class="text-link light" type="button" data-route="account"><span data-i18n="member.viewAccount">查看会员中心</span><span>↗</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="site-page inner-page" id="page-products" data-page="products">
+      <div class="inner-hero">
+        <div class="inner-hero-art" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="section-shell">
+          <div class="inner-hero-copy" data-reveal>
+            <div class="section-kicker light"><span>SELECTION</span><i></i><em data-i18n="products.kicker">明鼎米礼</em></div>
+            <h1 data-i18n="products.title">把五常的秋天，带回家</h1>
+            <p data-i18n="products.subtitle">同一片黑土地，两种恰到好处的相遇。日常自享，或郑重礼赠。</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-shell products-body">
+        <div class="filter-bar">
+          <div>
+            <button class="filter-btn active" type="button" data-filter="all" data-i18n="products.all">全部米礼</button>
+            <button class="filter-btn" type="button" data-filter="classic" data-i18n="products.classicFilter">普通袋装</button>
+            <button class="filter-btn" type="button" data-filter="gift" data-i18n="products.giftFilter">高端礼盒</button>
+          </div>
+          <span><strong>02</strong> <span data-i18n="products.count">款当季甄选</span></span>
+        </div>
+        <div class="product-cards" id="productCards">
+          <article class="product-card" data-category="classic" data-reveal>
+            <div class="product-card-visual">
+              <span class="card-badge" data-i18n="products.dailyBadge">日常之选</span>
+              <img src="assets/packaging/bag-front.svg" alt="普通袋装稻花香二号原粮" data-i18n-alt="alt.bagFront">
+              <div class="card-viewthumbs" aria-hidden="true">
+                <img src="assets/packaging/bag-side.svg" alt="">
+                <img src="assets/packaging/bag-back.svg" alt="">
+              </div>
+            </div>
+            <div class="product-card-content">
+              <div><small>DAILY SELECTION · 5KG</small><span class="stars">★★★★★</span></div>
+              <h2 data-i18n="product.name">明鼎 稻花香二号原粮</h2>
+              <p data-i18n="products.classicDesc">一季新米，米粒饱满，饭香清甜。适合每天的一碗好饭。</p>
+              <div class="product-card-bottom">
+                <div class="card-price"><strong><sup>¥</sup>89</strong><del>¥119</del></div>
+                <button class="round-arrow" type="button" data-buy-variant="classic" aria-label="购买普通袋装">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card featured" data-category="gift" data-reveal>
+            <div class="product-card-visual gift-visual">
+              <span class="card-badge" data-i18n="products.giftBadge">礼赠之选</span>
+              <img src="assets/packaging/gift-front.svg" alt="高端礼盒装稻花香二号原粮" data-i18n-alt="alt.giftFront">
+              <div class="card-viewthumbs gift-thumbs" aria-hidden="true">
+                <img src="assets/packaging/gift-side.svg" alt="">
+                <img src="assets/packaging/gift-back.svg" alt="">
+              </div>
+            </div>
+            <div class="product-card-content">
+              <div><small>PREMIUM GIFT · 5KG</small><span class="stars">★★★★★</span></div>
+              <h2 data-i18n="product.name">明鼎 稻花香二号原粮</h2>
+              <p data-i18n="products.giftDesc">独立分装，烫金礼盒，东方礼序。把五常风土郑重相赠。</p>
+              <div class="product-card-bottom">
+                <div class="card-price"><strong><sup>¥</sup>299</strong><del>¥369</del></div>
+                <button class="round-arrow" type="button" data-buy-variant="gift" aria-label="购买高端礼盒">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="product-service-row">
+          <article><span>01</span><strong data-i18n="products.service1">原产地直发</strong><p data-i18n="products.service1desc">从五常稻区直接发出</p></article>
+          <article><span>02</span><strong data-i18n="products.service2">新鲜锁香</strong><p data-i18n="products.service2desc">低温鲜碾并密封包装</p></article>
+          <article><span>03</span><strong data-i18n="products.service3">安心配送</strong><p data-i18n="products.service3desc">破损包赔，顺丰包邮</p></article>
+          <article><span>04</span><strong data-i18n="products.service4">会员积分</strong><p data-i18n="products.service4desc">消费 1 元得 10 积分</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-page inner-page about-page" id="page-about" data-page="about">
+      <div class="about-hero">
+        <img src="assets/images/paddy-art.svg" alt="五常稻田" class="about-hero-bg" data-i18n-alt="alt.paddy">
+        <div class="about-hero-overlay"></div>
+        <div class="section-shell">
+          <div class="about-hero-copy" data-reveal>
+            <div class="section-kicker light"><span>ORIGIN</span><i></i><em data-i18n="about.kicker">五常溯源</em></div>
+            <h1><span data-i18n="about.title1">一方黑土，</span><em data-i18n="about.title2">一季好稻。</em></h1>
+            <p data-i18n="about.subtitle">五常乾丰农业相信，最好的味道来自土地、时令与耐心。</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-shell about-content">
+        <div class="about-intro" data-reveal>
+          <div class="section-kicker"><span>01</span><i></i><em data-i18n="about.originKicker">风土源头</em></div>
+          <h2 data-i18n="about.originTitle">五常，稻香生长的答案</h2>
+          <div class="about-columns">
+            <p data-i18n="about.p1">五常位于黑龙江省南部，坐拥世界稀有的寒地黑土。长白山余脉环抱，拉林河与溪浪河润泽田野，昼夜温差让稻米在缓慢生长中积攒更多风味。</p>
+            <p data-i18n="about.p2">明鼎稻花香二号原粮便生长于这片北纬 45° 的核心稻区。我们遵循一季一作的节律，只在稻谷自然成熟后收割，以当季鲜米回应每一份期待。</p>
+          </div>
+        </div>
+        <div class="about-numbers">
+          <div><strong>45°</strong><span data-i18n="about.num1">黄金稻作纬度</span></div>
+          <div><strong>138</strong><span data-i18n="about.num2">天生积温</span></div>
+          <div><strong>1</strong><span data-i18n="about.num3">一年一季</span></div>
+          <div><strong>100%</strong><span data-i18n="about.num4">五常原粮</span></div>
+        </div>
+        <div class="values-grid">
+          <article data-reveal><span>敬</span><h3 data-i18n="about.value1">敬畏土地</h3><p data-i18n="about.value1desc">尊重自然节律，让土地保有呼吸与生息，以长期主义守护黑土。</p></article>
+          <article data-reveal><span>真</span><h3 data-i18n="about.value2">本真米香</h3><p data-i18n="about.value2desc">不过度加工，不抢早收割，保留当季原粮的清甜与油润。</p></article>
+          <article data-reveal><span>礼</span><h3 data-i18n="about.value3">东方礼序</h3><p data-i18n="about.value3desc">以克制、雅致的东方审美，重新表达一碗米饭的价值。</p></article>
+        </div>
+        <div class="about-pack-cta" data-reveal>
+          <div>
+            <small data-i18n="design.kicker">东方米礼</small>
+            <h2 data-i18n="about.designTitle">从稻田，到一方好礼</h2>
+            <p data-i18n="about.designBody">查看明鼎普通袋装与高端礼盒的完整包装三视图。</p>
+          </div>
+          <button class="btn btn-gold" id="aboutPackagingButton" type="button" data-i18n="design.view">查看包装三视图</button>
+        </div>
+        <div class="paddy-credit">
+          <span data-i18n="footer.videoCredit">视频素材：Jnanaranjan Sahu / Wikimedia Commons，CC BY-SA 3.0</span>
+          <a href="https://commons.wikimedia.org/wiki/File:A_rice_field_in_Kendrapara.webm" target="_blank" rel="noreferrer">Source ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-page inner-page" id="page-cart" data-page="cart">
+      <div class="page-title-shell section-shell">
+        <div>
+          <div class="section-kicker"><span>CART</span><i></i><em data-i18n="cart.kicker">您的米礼</em></div>
+          <h1 data-i18n="cart.title">购物车</h1>
+        </div>
+        <button class="text-link" type="button" id="continueShopping" data-i18n="cart.continue">继续选购</button>
+      </div>
+      <div class="section-shell cart-layout">
+        <div class="cart-main">
+          <div class="cart-block-head"><span data-i18n="cart.items">商品清单</span><button type="button" id="clearCartBtn" data-i18n="cart.clear">清空购物车</button></div>
+          <div class="cart-items" id="cartItems"></div>
+          <div class="cart-empty" id="cartEmpty">
+            <div class="empty-seal">米</div>
+            <h2 data-i18n="cart.empty">购物车里还没有米礼</h2>
+            <p data-i18n="cart.emptyHint">从一片五常稻田开始，选一份属于你的当季好米。</p>
+            <button class="btn btn-solid" type="button" data-route="products" data-i18n="cart.choose">去挑选米礼</button>
+          </div>
+          <div class="cart-benefits">
+            <div><span>¥</span><strong data-i18n="cart.benefit1">满 199 元包邮</strong><small data-i18n="cart.benefit1sub">顺丰配送，原产地直发</small></div>
+            <div><span>米</span><strong data-i18n="cart.benefit2">消费即得积分</strong><small>1 元 = 10 积分</small></div>
+            <div><span>礼</span><strong data-i18n="cart.benefit3">高端礼赠服务</strong><small data-i18n="cart.benefit3sub">礼盒可选祝福卡</small></div>
+          </div>
+        </div>
+        <aside class="cart-summary">
+          <h2 data-i18n="cart.summary">订单小计</h2>
+          <div class="summary-rows">
+            <div><span data-i18n="cart.subtotal">商品金额</span><strong id="cartSubtotal">¥0</strong></div>
+            <div><span data-i18n="cart.shipping">配送费</span><strong id="cartShipping">¥0</strong></div>
+            <div><span data-i18n="cart.pointsEarn">可得积分</span><strong id="cartPoints">0</strong></div>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-total"><span data-i18n="cart.total">合计</span><strong><sup>¥</sup><span id="cartTotal">0</span></strong></div>
+          <button class="btn btn-solid full" id="checkoutCartBtn" type="button">
+            <span data-i18n="cart.checkout">立即结算</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <p class="secure-note"><svg viewBox="0 0 24 24"><path d="M6 10V8a6 6 0 0 1 12 0v2m-14 0h16v10H4V10Zm8 4v3" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span data-i18n="cart.secure">安全模拟支付 · 本项目不会产生真实扣款</span></p>
+          <div class="summary-coupon">
+            <span data-i18n="cart.coupon">礼遇</span>
+            <p data-i18n="cart.couponText">首单享高端礼盒礼卡，结算后可添加祝福语。</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="site-page inner-page" id="page-account" data-page="account">
+      <div class="page-title-shell section-shell">
+        <div>
+          <div class="section-kicker"><span>MEMBER</span><i></i><em data-i18n="account.kicker">明鼎米友会</em></div>
+          <h1 data-i18n="account.title">会员中心</h1>
+        </div>
+        <button class="text-link" type="button" id="accountBackHome" data-i18n="account.backHome">返回首页</button>
+      </div>
+
+      <div class="section-shell">
+        <div class="account-guest" id="accountGuest">
+          <div class="guest-seal">鼎</div>
+          <small data-i18n="account.guestKicker">MINGDING MEMBERSHIP</small>
+          <h2 data-i18n="account.guestTitle">登录，续写你的米香时光</h2>
+          <p data-i18n="account.guestBody">查看积分、订单记录与会员专属米礼。新会员注册即享首单积分。</p>
+          <div>
+            <button class="btn btn-solid" type="button" data-open-auth="login" data-i18n="account.login">登录账户</button>
+            <button class="btn btn-outline-dark" type="button" data-open-auth="register" data-i18n="account.register">注册会员</button>
+          </div>
+          <span data-i18n="account.demoHint">体验账户：13800138000 / 123456</span>
+        </div>
+
+        <div class="account-dashboard" id="accountDashboard">
+          <section class="member-profile-card">
+            <div class="member-profile-top">
+              <div class="member-avatar" id="memberAvatar">明</div>
+              <div>
+                <span data-i18n="account.welcome">欢迎回来</span>
+                <h2 id="memberName">明鼎米友</h2>
+                <small id="memberPhone">138****8000</small>
+              </div>
+              <span class="member-level" data-i18n="account.level">稻香会员</span>
+            </div>
+            <div class="member-stats">
+              <div><span data-i18n="account.points">会员积分</span><strong id="memberPoints">0</strong><small data-i18n="account.pointUnit">积分</small></div>
+              <div><span data-i18n="account.orders">历史订单</span><strong id="memberOrderCount">0</strong><small data-i18n="account.orderUnit">笔</small></div>
+              <div><span data-i18n="account.rule">积分规则</span><strong>1:10</strong><small data-i18n="account.ruleValue">1 元 = 10 积分</small></div>
+            </div>
+          </section>
+
+          <section class="account-panel orders-panel">
+            <div class="panel-heading">
+              <div><small>ORDERS</small><h2 data-i18n="account.recentOrders">订单记录</h2></div>
+              <button class="text-link" type="button" id="refreshOrders" data-i18n="account.refresh">刷新</button>
+            </div>
+            <div class="orders-list" id="ordersList"></div>
+            <div class="orders-empty" id="ordersEmpty">
+              <span>禾</span>
+              <h3 data-i18n="account.noOrders">还没有订单</h3>
+              <p data-i18n="account.noOrdersHint">从一碗五常好饭开始吧。</p>
+              <button class="text-link" type="button" data-route="products" data-i18n="account.shopNow">去选购</button>
+            </div>
+          </section>
+
+          <section class="account-panel member-perks">
+            <div class="panel-heading"><div><small>BENEFITS</small><h2 data-i18n="account.perks">会员权益</h2></div></div>
+            <div class="perks-grid">
+              <article><span>10×</span><strong data-i18n="account.perk1">消费积分</strong><p data-i18n="account.perk1desc">消费 1 元自动累计 10 积分</p></article>
+              <article><span>礼</span><strong data-i18n="account.perk2">米礼优先</strong><p data-i18n="account.perk2desc">当季新米与礼盒优先购买</p></article>
+              <article><span>鲜</span><strong data-i18n="account.perk3">新鲜直达</strong><p data-i18n="account.perk3desc">五常原产地直发，锁住米香</p></article>
+            </div>
+          </section>
+
+          <div class="account-footer-actions">
+            <button class="text-link danger" type="button" id="logoutBtn" data-i18n="account.logout">退出登录</button>
+            <button class="text-link" type="button" data-route="home" data-i18n="account.continue">继续寻香</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-top">
+      <div class="footer-brand">
+        <div class="brand-seal large">乾</div>
+        <h2 data-i18n="brand">五常乾丰农业</h2>
+        <p data-i18n="footer.statement">一季一作，敬畏土地。把五常黑土地的清甜米香，郑重带到每一张餐桌。</p>
+      </div>
+      <div class="footer-links">
+        <div><strong data-i18n="footer.explore">探索明鼎</strong><button data-route="products" data-i18n="nav.products">甄选米礼</button><button data-route="about" data-i18n="nav.about">五常溯源</button><button data-route="account" data-i18n="nav.member">会员中心</button></div>
+        <div><strong data-i18n="footer.service">客户服务</strong><button data-route="cart" data-i18n="nav.cart">购物车</button><button type="button" id="footerPackagingBtn" data-i18n="footer.design">包装设计</button><a href="mailto:hello@qianfeng.rice">hello@qianfeng.rice</a></div>
+        <div><strong data-i18n="footer.visit">稻香有约</strong><span data-i18n="footer.address">中国 · 黑龙江省五常市</span><span>N 44° 55′ / E 127° 09′</span><span data-i18n="footer.hours">周一至周日 09:00–18:00</span></div>
+      </div>
+    </div>
+    <div class="section-shell footer-bottom">
+      <span>© 2026 WUCHANG QIANFENG AGRICULTURE</span>
+      <span data-i18n="footer.rights">保留所有权利 · 本网站为品牌演示项目</span>
+      <button type="button" id="backToTop"><span data-i18n="footer.top">回到顶部</span> ↑</button>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="modal-card auth-card">
+      <button class="modal-close" type="button" data-close-modal aria-label="关闭">×</button>
+      <div class="auth-aside">
+        <div class="auth-seal">乾</div>
+        <small>WUCHANG QIANFENG</small>
+        <h2 data-i18n="auth.asideTitle">一碗好饭，<br>值得被记住。</h2>
+        <p data-i18n="auth.asideBody">加入明鼎米友会，消费即可累计积分，收藏属于你的五常四季。</p>
+      </div>
+      <div class="auth-main">
+        <div class="auth-tabs">
+          <button class="active" type="button" data-auth-tab="login" data-i18n="auth.login">登录</button>
+          <button type="button" data-auth-tab="register" data-i18n="auth.register">注册</button>
+        </div>
+        <h2 id="authTitle" data-i18n="auth.loginTitle">欢迎回来</h2>
+        <p id="authSubtitle" data-i18n="auth.loginSubtitle">登录账户，查看积分与订单记录。</p>
+        <form id="loginForm" class="auth-form">
+          <label><span data-i18n="auth.phone">手机号码</span><input type="tel" name="phone" inputmode="numeric" autocomplete="tel" placeholder="请输入手机号码" data-i18n-placeholder="auth.phonePlaceholder" required></label>
+          <label><span data-i18n="auth.password">登录密码</span><input type="password" name="password" autocomplete="current-password" placeholder="请输入密码" data-i18n-placeholder="auth.passwordPlaceholder" required></label>
+          <button class="btn btn-solid full" type="submit" data-i18n="auth.loginButton">登录账户</button>
+          <button class="demo-login" type="button" id="demoLoginBtn" data-i18n="auth.demoLogin">使用体验账户登录</button>
+        </form>
+        <form id="registerForm" class="auth-form hidden">
+          <label><span data-i18n="auth.name">称呼</span><input type="text" name="name" autocomplete="name" placeholder="例如：林女士" data-i18n-placeholder="auth.namePlaceholder" required></label>
+          <label><span data-i18n="auth.phone">手机号码</span><input type="tel" name="phone" inputmode="numeric" autocomplete="tel" placeholder="请输入 11 位手机号码" data-i18n-placeholder="auth.registerPhonePlaceholder" required></label>
+          <label><span data-i18n="auth.password">登录密码</span><input type="password" name="password" minlength="6" autocomplete="new-password" placeholder="至少 6 位字符" data-i18n-placeholder="auth.registerPasswordPlaceholder" required></label>
+          <label class="check-label"><input type="checkbox" required><span data-i18n="auth.terms">我已阅读并同意会员条款与隐私说明</span></label>
+          <button class="btn btn-solid full" type="submit" data-i18n="auth.registerButton">注册会员</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-card checkout-card">
+      <button class="modal-close" type="button" data-close-modal aria-label="关闭">×</button>
+      <div class="checkout-head">
+        <small>SECURE CHECKOUT</small>
+        <h2 id="checkoutTitle" data-i18n="checkout.title">确认订单</h2>
+        <div class="checkout-steps">
+          <span class="active" data-step="1"><i>1</i><em data-i18n="checkout.step1">确认订单</em></span>
+          <b></b>
+          <span data-step="2"><i>2</i><em data-i18n="checkout.step2">模拟支付</em></span>
+          <b></b>
+          <span data-step="3"><i>3</i><em data-i18n="checkout.step3">支付完成</em></span>
+        </div>
+      </div>
+
+      <div class="checkout-view active" id="checkoutViewOrder">
+        <div class="checkout-layout">
+          <div class="checkout-form-area">
+            <section class="checkout-section">
+              <div class="checkout-section-title"><span>01</span><h3 data-i18n="checkout.recipient">收货信息</h3></div>
+              <div class="form-grid">
+                <label><span data-i18n="checkout.name">收货人</span><input id="shipName" type="text" placeholder="请输入姓名" data-i18n-placeholder="checkout.namePlaceholder" required></label>
+                <label><span data-i18n="checkout.phone">联系电话</span><input id="shipPhone" type="tel" inputmode="numeric" placeholder="请输入手机号码" data-i18n-placeholder="checkout.phonePlaceholder" required></label>
+                <label class="span-2"><span data-i18n="checkout.address">详细地址</span><input id="shipAddress" type="text" placeholder="省 / 市 / 区 / 街道门牌" data-i18n-placeholder="checkout.addressPlaceholder" required></label>
+                <label class="span-2"><span data-i18n="checkout.note">礼赠祝福（选填）</span><input id="shipNote" type="text" maxlength="50" placeholder="例如：愿四时安好，饭香常伴。" data-i18n-placeholder="checkout.notePlaceholder"></label>
+              </div>
+            </section>
+            <section class="checkout-section">
+              <div class="checkout-section-title"><span>02</span><h3 data-i18n="checkout.paymentMethod">支付方式</h3></div>
+              <div class="payment-methods">
+                <button class="payment-method active" type="button" data-payment="wechat"><span class="pay-icon wechat">微</span><strong data-i18n="checkout.wechat">微信支付</strong><i></i></button>
+                <button class="payment-method" type="button" data-payment="alipay"><span class="pay-icon alipay">支</span><strong data-i18n="checkout.alipay">支付宝</strong><i></i></button>
+                <button class="payment-method" type="button" data-payment="card"><span class="pay-icon card">卡</span><strong data-i18n="checkout.card">银行卡</strong><i></i></button>
+              </div>
+            </section>
+            <p class="simulation-note"><svg viewBox="0 0 24 24"><path d="M12 8v5m0 4h.01M12 3l9 17H3L12 3Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span data-i18n="checkout.simulation">当前为完整模拟支付流程，不会产生真实扣款。</span></p>
+          </div>
+          <aside class="checkout-summary">
+            <h3 data-i18n="checkout.summary">订单明细</h3>
+            <div id="checkoutItems"></div>
+            <div class="checkout-totals">
+              <div><span data-i18n="cart.subtotal">商品金额</span><b id="checkoutSubtotal">¥0</b></div>
+              <div><span data-i18n="cart.shipping">配送费</span><b id="checkoutShipping">¥0</b></div>
+              <div><span data-i18n="cart.pointsEarn">可得积分</span><b id="checkoutPoints">0</b></div>
+              <div class="grand"><span data-i18n="cart.total">合计</span><strong><sup>¥</sup><span id="checkoutTotal">0</span></strong></div>
+            </div>
+            <button class="btn btn-solid full" id="payNowBtn" type="button" data-i18n="checkout.pay">确认并模拟支付</button>
+            <small data-i18n="checkout.agree">点击即代表同意订单及配送说明</small>
+          </aside>
+        </div>
+      </div>
+
+      <div class="checkout-view" id="checkoutViewProcessing">
+        <div class="payment-processing">
+          <div class="processing-orbit"><span></span><i>米</i></div>
+          <h2 data-i18n="checkout.processing">正在模拟支付</h2>
+          <p data-i18n="checkout.processingHint">请稍候，我们正在为你封存这一季的五常米香。</p>
+        </div>
+      </div>
+
+      <div class="checkout-view" id="checkoutViewSuccess">
+        <div class="payment-success">
+          <div class="success-seal">
+            <svg viewBox="0 0 52 52"><path d="m14 27 8 8 17-19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <small>ORDER CONFIRMED</small>
+          <h2 data-i18n="checkout.success">支付成功</h2>
+          <p data-i18n="checkout.successHint">五常的好米已经启程，愿它温柔抵达你的餐桌。</p>
+          <div class="success-meta">
+            <div><span data-i18n="checkout.orderNo">订单编号</span><strong id="successOrderNo">QF00000000</strong></div>
+            <div><span data-i18n="checkout.pointsAdded">新增积分</span><strong id="successPoints">+0</strong></div>
+          </div>
+          <div class="success-actions">
+            <button class="btn btn-outline-dark" type="button" id="viewOrderBtn" data-i18n="checkout.viewOrder">查看订单</button>
+            <button class="btn btn-solid" type="button" data-route="home" data-close-modal data-i18n="checkout.continueShopping">继续寻香</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop packaging-modal" id="packagingModal" role="dialog" aria-modal="true" aria-labelledby="packagingTitle">
+    <div class="modal-card packaging-modal-card">
+      <button class="modal-close" type="button" data-close-modal aria-label="关闭">×</button>
+      <div class="packaging-modal-head">
+        <div><small>PACKAGING DESIGN / 2026</small><h2 id="packagingTitle" data-i18n="design.modalTitle">明鼎产品包装三视图</h2></div>
+        <div class="packaging-tabs">
+          <button class="active" type="button" data-pack-tab="bag" data-i18n="product.classic">普通袋装</button>
+          <button type="button" data-pack-tab="gift" data-i18n="product.gift">高端礼盒</button>
+        </div>
+      </div>
+      <div class="packaging-modal-view">
+        <img id="packagingModalImage" src="assets/packaging/bag-tri-view.svg" alt="普通袋装包装三视图">
+      </div>
+      <div class="packaging-modal-foot">
+        <p><span data-i18n="design.brandLabel">品牌</span> 五常乾丰农业 · <span data-i18n="design.originLabel">产地</span> 黑龙江五常 · 5 kg</p>
+        <a id="packagingDownload" href="assets/packaging/bag-tri-view.svg" download data-i18n="design.download">下载矢量原稿</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="floating-cart" id="floatingCart" type="button" aria-label="打开购物车">
+    <svg viewBox="0 0 24 24"><path d="M5 7h14l-1.2 10H6.2L5 7Zm3-1a4 4 0 0 1 8 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+    <span id="floatingCartCount">0</span>
+  </button>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

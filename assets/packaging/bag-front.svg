@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="760" viewBox="0 0 520 760" role="img" aria-labelledby="title desc">
+  <title id="title">明鼎稻花香二号原粮普通袋装正面</title>
+  <desc id="desc">墨绿色与米白色高端大米包装袋正面，带金色稻穗纹样。</desc>
+  <defs>
+    <linearGradient id="bagGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173f34"/>
+      <stop offset=".48" stop-color="#0a2b23"/>
+      <stop offset="1" stop-color="#061f19"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9d4a6"/>
+      <stop offset=".45" stop-color="#b88b43"/>
+      <stop offset=".7" stop-color="#dfc286"/>
+      <stop offset="1" stop-color="#8d682e"/>
+    </linearGradient>
+    <linearGradient id="ivory" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf6"/>
+      <stop offset="1" stop-color="#eee3cd"/>
+    </linearGradient>
+    <pattern id="riceLines" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(-10)">
+      <path d="M23 42C15 31 18 18 25 5M23 42C28 27 37 19 43 15" fill="none" stroke="#e5cc93" stroke-opacity=".13" stroke-width="1.2"/>
+      <ellipse cx="27" cy="15" rx="2" ry="4" fill="#e5cc93" fill-opacity=".15" transform="rotate(20 27 15)"/>
+      <ellipse cx="33" cy="11" rx="2" ry="4" fill="#e5cc93" fill-opacity=".12" transform="rotate(34 33 11)"/>
+      <ellipse cx="19" cy="23" rx="2" ry="4" fill="#e5cc93" fill-opacity=".14" transform="rotate(-20 19 23)"/>
+    </pattern>
+    <filter id="bagShadow" x="-20%" y="-12%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#00120e" flood-opacity=".34"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#bagShadow)">
+    <path d="M89 56 Q95 26 128 23 L392 23 Q425 26 431 56 L443 660 Q445 723 390 739 L130 739 Q75 723 77 660 Z" fill="url(#bagGreen)"/>
+    <path d="M89 56 Q95 26 128 23 L392 23 Q425 26 431 56 L443 660 Q445 723 390 739 L130 739 Q75 723 77 660 Z" fill="url(#riceLines)"/>
+    <path d="M91 72 Q113 45 144 40 L376 40 Q407 45 429 72" fill="none" stroke="url(#gold)" stroke-width="2.2" stroke-opacity=".88"/>
+    <path d="M84 640 Q95 709 145 728 L375 728 Q425 709 436 640" fill="#041814" fill-opacity=".5"/>
+    <path d="M85 642 Q96 700 142 718 L378 718 Q424 700 435 642" fill="none" stroke="#c7a55f" stroke-opacity=".34"/>
+
+    <!-- top seal -->
+    <g transform="translate(260 86)">
+      <path d="M0 -29 27 -8 20 25 0 36 -20 25 -27 -8 Z" fill="none" stroke="url(#gold)" stroke-width="1.1"/>
+      <path d="M0 -21 20 -6 15 18 0 27 -15 18 -20 -6 Z" fill="none" stroke="#d5b978" stroke-width=".6" stroke-opacity=".85"/>
+      <text x="0" y="-2" text-anchor="middle" fill="#ead7ab" font-family="KaiTi, STKaiti, serif" font-size="11" letter-spacing="1">五常</text>
+      <text x="0" y="13" text-anchor="middle" fill="#ead7ab" font-family="KaiTi, STKaiti, serif" font-size="8">乾丰</text>
+    </g>
+
+    <text x="260" y="155" text-anchor="middle" fill="#e7d4aa" font-family="Songti SC, SimSun, serif" font-size="16" letter-spacing="7">五常乾丰农业</text>
+    <line x1="180" y1="173" x2="234" y2="173" stroke="url(#gold)" stroke-width=".8"/>
+    <line x1="286" y1="173" x2="340" y2="173" stroke="url(#gold)" stroke-width=".8"/>
+    <circle cx="260" cy="173" r="2.4" fill="#d8b66f"/>
+
+    <!-- brand -->
+    <text x="260" y="275" text-anchor="middle" fill="url(#ivory)" font-family="STKaiti, KaiTi, serif" font-size="92" font-weight="600" letter-spacing="8">明鼎</text>
+    <path d="M206 302 Q260 315 314 302" fill="none" stroke="#c8a35e" stroke-width="1"/>
+    <text x="260" y="345" text-anchor="middle" fill="#e8d8b9" font-family="Songti SC, SimSun, serif" font-size="28" letter-spacing="7">稻花香二号</text>
+    <text x="260" y="382" text-anchor="middle" fill="#c9ad75" font-family="Songti SC, SimSun, serif" font-size="15" letter-spacing="9">原 粮 大 米</text>
+
+    <!-- rice motif -->
+    <g fill="none" stroke="#d2b773" stroke-width="1.1" stroke-linecap="round" opacity=".8">
+      <path d="M163 535C203 494 219 437 213 370"/>
+      <path d="M213 387c-24-4-38-18-49-35M216 411c25-6 41-20 52-39M210 439c-22-2-39-13-52-29M215 466c25-2 43-13 56-30M209 492c-19-2-34-11-46-23M215 518c22-1 40-12 52-27"/>
+      <g fill="#d2b773" stroke="none">
+        <ellipse cx="185" cy="368" rx="3.1" ry="7" transform="rotate(34 185 368)"/>
+        <ellipse cx="176" cy="360" rx="3.1" ry="7" transform="rotate(34 176 360)"/>
+        <ellipse cx="168" cy="352" rx="3.1" ry="7" transform="rotate(34 168 352)"/>
+        <ellipse cx="240" cy="388" rx="3.1" ry="7" transform="rotate(-30 240 388)"/>
+        <ellipse cx="248" cy="380" rx="3.1" ry="7" transform="rotate(-30 248 380)"/>
+        <ellipse cx="256" cy="371" rx="3.1" ry="7" transform="rotate(-30 256 371)"/>
+      </g>
+      <path d="M357 535C317 494 301 437 307 370"/>
+      <path d="M307 387c24-4 38-18 49-35M304 411c-25-6-41-20-52-39M310 439c22-2 39-13 52-29M305 466c-25-2-43-13-56-30M311 492c19-2 34-11 46-23M305 518c-22-1-40-12-52-27"/>
+      <g fill="#d2b773" stroke="none">
+        <ellipse cx="335" cy="368" rx="3.1" ry="7" transform="rotate(-34 335 368)"/>
+        <ellipse cx="344" cy="360" rx="3.1" ry="7" transform="rotate(-34 344 360)"/>
+        <ellipse cx="352" cy="352" rx="3.1" ry="7" transform="rotate(-34 352 352)"/>
+        <ellipse cx="280" cy="388" rx="3.1" ry="7" transform="rotate(30 280 388)"/>
+        <ellipse cx="272" cy="380" rx="3.1" ry="7" transform="rotate(30 272 380)"/>
+        <ellipse cx="264" cy="371" rx="3.1" ry="7" transform="rotate(30 264 371)"/>
+      </g>
+    </g>
+
+    <g transform="translate(260 518)">
+      <rect x="-104" y="-20" width="208" height="40" rx="2" fill="#08231d" stroke="#9e7a3f" stroke-width=".8"/>
+      <text x="0" y="6" text-anchor="middle" fill="#e9d9b9" font-family="Songti SC, SimSun, serif" font-size="13" letter-spacing="4">黑龙江 · 五常</text>
+    </g>
+
+    <line x1="128" y1="598" x2="392" y2="598" stroke="#c6a35e" stroke-opacity=".4"/>
+    <text x="260" y="624" text-anchor="middle" fill="#c0a56d" font-family="Songti SC, SimSun, serif" font-size="11" letter-spacing="4">当 季 新 米</text>
+    <text x="260" y="663" text-anchor="middle" fill="#f2e7d0" font-family="Georgia, serif" font-size="17" letter-spacing="2">5 kg · 原 粮 米</text>
+    <text x="260" y="694" text-anchor="middle" fill="#8d7c5d" font-family="Georgia, serif" font-size="8" letter-spacing="2">WUCHANG QIANFENG AGRICULTURE</text>
+  </g>
+</svg>

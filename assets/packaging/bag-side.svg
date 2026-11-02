@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="760" viewBox="0 0 230 760" role="img" aria-labelledby="title desc">
+  <title id="title">明鼎稻花香二号原粮普通袋装侧面</title>
+  <desc id="desc">墨绿色包装袋侧面，展示品牌与稻穗纹样。</desc>
+  <defs>
+    <linearGradient id="sideGreen" x1="0" y1="0" x2="1" y2=".7">
+      <stop offset="0" stop-color="#0b2b23"/>
+      <stop offset=".55" stop-color="#153c31"/>
+      <stop offset="1" stop-color="#071f19"/>
+    </linearGradient>
+    <linearGradient id="sideGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e4ca91"/>
+      <stop offset=".55" stop-color="#9e7637"/>
+      <stop offset="1" stop-color="#dcc187"/>
+    </linearGradient>
+    <filter id="shadow" x="-35%" y="-10%" width="170%" height="130%">
+      <feDropShadow dx="10" dy="15" stdDeviation="13" flood-color="#00110d" flood-opacity=".32"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M34 36Q42 17 68 16L168 16Q192 18 198 36L210 664Q209 724 177 739L58 739Q25 724 24 664Z" fill="url(#sideGreen)"/>
+    <path d="M38 43Q60 26 86 26L153 26Q179 27 195 43" fill="none" stroke="url(#sideGold)" stroke-width="1.5"/>
+    <path d="M29 662Q32 712 65 730L174 730Q204 712 207 662" fill="#041814" fill-opacity=".45"/>
+    <g fill="none" stroke="#c6a665" stroke-opacity=".38">
+      <path d="M70 358C107 323 116 281 112 232"/>
+      <path d="M112 247c-18-3-29-12-36-24M113 267c18-5 29-14 36-28M111 290c-17-1-29-9-38-20M112 311c18-2 30-9 39-21M110 333c-14-1-25-8-33-17M112 351c16-1 28-8 37-19"/>
+      <path d="M160 358C123 323 114 281 118 232"/>
+      <path d="M118 247c18-3 29-12 36-24M117 267c-18-5-29-14-36-28M119 290c17-1 29-9 38-20M118 311c-18-2-30-9-39-21M120 333c14-1 25-8 33-17M118 351c-16-1-28-8-37-19"/>
+    </g>
+    <text x="115" y="90" text-anchor="middle" fill="#ead9b7" font-family="KaiTi, STKaiti, serif" font-size="30" letter-spacing="8">明鼎</text>
+    <text x="115" y="118" text-anchor="middle" fill="#b99b61" font-family="Songti SC, SimSun, serif" font-size="9" letter-spacing="3">WUCHANG ORIGIN</text>
+    <line x1="76" y1="140" x2="154" y2="140" stroke="#b69355" stroke-opacity=".6"/>
+    <text x="115" y="173" text-anchor="middle" fill="#cdb47d" font-family="Songti SC, SimSun, serif" font-size="10" letter-spacing="4">五常乾丰农业</text>
+    <text x="115" y="430" text-anchor="middle" fill="#d9c59f" font-family="Songti SC, SimSun, serif" font-size="13" letter-spacing="5">稻花香二号</text>
+    <text x="115" y="455" text-anchor="middle" fill="#9f875c" font-family="Songti SC, SimSun, serif" font-size="9" letter-spacing="4">原 粮 大 米</text>
+    <g transform="translate(115 568)">
+      <rect x="-58" y="-17" width="116" height="34" fill="none" stroke="#b49355" stroke-width=".8"/>
+      <text x="0" y="5" text-anchor="middle" fill="#ddcba7" font-family="Songti SC, SimSun, serif" font-size="10" letter-spacing="2">黑龙江 · 五常</text>
+    </g>
+    <text x="115" y="660" text-anchor="middle" fill="#e5d5b5" font-family="Georgia, serif" font-size="12" letter-spacing="2">5 kg</text>
+    <text x="115" y="692" text-anchor="middle" fill="#8f8a74" font-family="Arial, sans-serif" font-size="6" letter-spacing="1.8">ORGANIC · PREMIUM RICE</text>
+  </g>
+</svg>

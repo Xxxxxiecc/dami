@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="620" viewBox="0 0 270 620" role="img" aria-labelledby="title desc">
+  <title id="title">明鼎稻花香二号原粮高端礼盒侧面</title>
+  <desc id="desc">高端礼盒侧面，米白底色搭配墨绿标签与金色线条。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf7ec"/>
+      <stop offset="1" stop-color="#e3d5ba"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#153e33"/>
+      <stop offset="1" stop-color="#071f19"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-15%" width="160%" height="140%">
+      <feDropShadow dx="10" dy="15" stdDeviation="14" flood-color="#00140f" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="20" y="42" width="230" height="526" rx="3" fill="url(#paper)"/>
+    <rect x="30" y="52" width="210" height="506" fill="none" stroke="#a78347" stroke-width=".8"/>
+    <rect x="20" y="42" width="230" height="46" fill="#0b2821"/>
+    <rect x="20" y="520" width="230" height="48" fill="#0b2821"/>
+    <path d="M250 486V568H166L250 486Z" fill="#cfc0a4" fill-opacity=".48"/>
+
+    <text x="135" y="124" text-anchor="middle" fill="#1b4035" font-family="Songti SC, SimSun, serif" font-size="17" letter-spacing="5">五常乾丰农业</text>
+    <text x="135" y="146" text-anchor="middle" fill="#9a7a47" font-family="Georgia, serif" font-size="6" letter-spacing="1.7">ORIGINAL RICE</text>
+    <line x1="61" y1="166" x2="209" y2="166" stroke="#a7854c" stroke-opacity=".42"/>
+
+    <g transform="translate(135 296)">
+      <circle cx="0" cy="-56" r="44" fill="none" stroke="#b08a4b" stroke-opacity=".55"/>
+      <circle cx="0" cy="-56" r="34" fill="#12392f"/>
+      <text y="-60" text-anchor="middle" fill="#e9d8b4" font-family="KaiTi, STKaiti, serif" font-size="11" letter-spacing="2">五常</text>
+      <text y="-44" text-anchor="middle" fill="#bda06a" font-family="KaiTi, STKaiti, serif" font-size="8">乾丰</text>
+      <text y="16" text-anchor="middle" fill="#193b31" font-family="STKaiti, KaiTi, serif" font-size="36" letter-spacing="5">明鼎</text>
+      <text y="52" text-anchor="middle" fill="#826638" font-family="Songti SC, SimSun, serif" font-size="12" letter-spacing="4">稻花香二号</text>
+      <text y="76" text-anchor="middle" fill="#a08859" font-family="Songti SC, SimSun, serif" font-size="8" letter-spacing="5">原粮大米</text>
+    </g>
+
+    <g fill="none" stroke="#987844" stroke-opacity=".45" stroke-width=".8">
+      <path d="M62 412C93 386 103 351 101 317"/>
+      <path d="M101 330c-12-2-20-9-25-17M102 350c13-3 21-11 25-20M100 370c-11-1-20-7-27-15M102 390c13-1 22-8 28-18M101 407c-9 0-17-6-23-13"/>
+      <path d="M208 412C177 386 167 351 169 317"/>
+      <path d="M169 330c12-2 20-9 25-17M168 350c-13-3-21-11-25-20M170 370c11-1 20-7 27-15M168 390c-13-1-22-8-28-18M169 407c9 0 17-6 23-13"/>
+    </g>
+    <text x="135" y="466" text-anchor="middle" fill="#1a3b31" font-family="Songti SC, SimSun, serif" font-size="9" letter-spacing="3">黑龙江 · 五常</text>
+    <text x="135" y="486" text-anchor="middle" fill="#947849" font-family="Georgia, serif" font-size="7" letter-spacing="1.6">NET WT. 5 KG</text>
+    <text x="135" y="545" text-anchor="middle" fill="#d8c8a7" font-family="Georgia, serif" font-size="7" letter-spacing="2">SINGLE ORIGIN · GIFT COLLECTION</text>
+  </g>
+</svg>

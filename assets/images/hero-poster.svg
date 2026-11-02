@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">五常稻花香稻田晨光</title>
+  <desc id="desc">用于网站首屏的稻田晨光海报。</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe4ce"/>
+      <stop offset=".5" stop-color="#a9aa8d"/>
+      <stop offset="1" stop-color="#345642"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6f8459"/>
+      <stop offset=".42" stop-color="#2a593f"/>
+      <stop offset="1" stop-color="#08271f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".7" cy=".14" r=".55">
+      <stop offset="0" stop-color="#fff6db" stop-opacity=".92"/>
+      <stop offset=".44" stop-color="#ebd9b2" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#e3d1ad" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="haze"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <path d="M0 420C221 358 430 386 624 427C844 474 1022 477 1211 421C1439 354 1639 361 1920 434V640H0Z" fill="#4d624d" opacity=".4" filter="url(#haze)"/>
+  <path d="M0 544C243 476 472 489 704 546C920 599 1147 591 1370 530C1556 480 1744 482 1920 536V770H0Z" fill="#30543e" opacity=".8"/>
+  <path d="M0 707C245 638 505 648 754 714C990 776 1240 771 1469 709C1638 663 1797 665 1920 710V1080H0Z" fill="url(#ground)"/>
+  <g fill="none" stroke="#d1be84" stroke-opacity=".24" stroke-width="2">
+    <path d="M0 744C262 682 520 688 774 752C1017 813 1265 812 1505 750C1652 714 1799 716 1920 754"/>
+    <path d="M0 840C261 781 538 788 804 848C1050 904 1308 907 1574 846C1710 815 1824 820 1920 850"/>
+    <path d="M0 957C257 900 525 907 799 967C1047 1021 1293 1022 1551 969C1695 940 1820 945 1920 980"/>
+  </g>
+  <g fill="#d6c489" opacity=".48" filter="url(#haze)">
+    <ellipse cx="370" cy="545" rx="360" ry="75"/>
+    <ellipse cx="1475" cy="533" rx="390" ry="62"/>
+  </g>
+  <g fill="none" stroke="#d7c486" stroke-opacity=".56" stroke-width="2">
+    <path d="M90 1032C121 898 120 794 108 718M108 771c-37-11-61-31-79-57M110 813c40-14 65-37 81-64M103 866c-31-3-57-20-78-43M109 910c35-4 61-19 82-41"/>
+    <path d="M1840 1035C1809 901 1812 797 1825 720M1825 773c38-11 62-32 80-58M1822 815c-40-14-65-38-82-65M1829 868c32-3 57-20 79-43M1823 912c-36-4-62-19-83-42"/>
+  </g>
+  <rect width="1920" height="1080" fill="#071d17" opacity=".27"/>
+</svg>

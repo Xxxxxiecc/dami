@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+  <g fill="none" stroke="#173f34" stroke-opacity=".09" stroke-width="1" stroke-linecap="round">
+    <path d="M48 412C116 330 151 252 147 167"/>
+    <path d="M147 185c-37-8-62-29-78-55M151 213c40-10 67-33 83-62M146 248c-31-2-56-18-76-40M151 280c35-4 61-20 81-45M145 312c-29-4-52-19-69-38M150 341c34-2 57-18 74-40M147 372c-24-1-43-14-59-31"/>
+    <g fill="#173f34" fill-opacity=".08" stroke="none">
+      <ellipse cx="102" cy="171" rx="4" ry="11" transform="rotate(36 102 171)"/>
+      <ellipse cx="89" cy="156" rx="4" ry="11" transform="rotate(36 89 156)"/>
+      <ellipse cx="77" cy="141" rx="4" ry="11" transform="rotate(36 77 141)"/>
+      <ellipse cx="191" cy="188" rx="4" ry="11" transform="rotate(-36 191 188)"/>
+      <ellipse cx="207" cy="174" rx="4" ry="11" transform="rotate(-36 207 174)"/>
+      <ellipse cx="222" cy="159" rx="4" ry="11" transform="rotate(-36 222 159)"/>
+    </g>
+    <path d="M306 412C384 335 412 256 408 171"/>
+    <path d="M408 188c-35-7-60-27-76-53M411 218c38-9 63-31 79-59M407 251c-31-2-55-18-74-39M411 283c33-3 58-18 78-42M406 315c-28-4-50-18-67-37M410 344c32-2 55-17 72-38M408 374c-23-1-42-13-57-30"/>
+    <g fill="#173f34" fill-opacity=".08" stroke="none">
+      <ellipse cx="369" cy="176" rx="4" ry="11" transform="rotate(36 369 176)"/>
+      <ellipse cx="356" cy="161" rx="4" ry="11" transform="rotate(36 356 161)"/>
+      <ellipse cx="344" cy="146" rx="4" ry="11" transform="rotate(36 344 146)"/>
+      <ellipse cx="450" cy="191" rx="4" ry="11" transform="rotate(-36 450 191)"/>
+      <ellipse cx="465" cy="176" rx="4" ry="11" transform="rotate(-36 465 176)"/>
+    </g>
+    <path d="M0 388C71 361 120 366 177 388C242 413 304 414 378 383C398 375 411 366 420 355"/>
+    <path d="M0 400C70 376 123 379 184 399C251 421 315 420 420 374"/>
+  </g>
+</svg>
